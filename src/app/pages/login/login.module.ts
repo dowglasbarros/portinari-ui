@@ -4,6 +4,9 @@ import { LoginComponent } from './login.component';
 import { RouterModule } from '@angular/router';
 import { LoginRoutingModule } from './login-routing.module';
 
+import { PoPageLoginModule } from '@portinari/portinari-templates';
+import { PoModalPasswordRecoveryModule } from '@portinari/portinari-templates';
+
 @NgModule({
   declarations: [
     LoginComponent
@@ -11,7 +14,9 @@ import { LoginRoutingModule } from './login-routing.module';
   imports: [
     CommonModule,
     LoginRoutingModule,
-    RouterModule
+    RouterModule,
+    PoPageLoginModule,
+    PoModalPasswordRecoveryModule
   ]
 })
 export class LoginModule { }
